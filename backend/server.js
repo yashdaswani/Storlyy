@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 mongoose
-  .connect(MONGO, {
+  .connect(process.env.MONGO, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
