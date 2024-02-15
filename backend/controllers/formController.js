@@ -37,7 +37,7 @@ exports.submitForm = async (req, res) => {
     });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ message: "Something went wrong!" });
+    return res.status(500).json({ message: error });
   }
 };
 
@@ -47,6 +47,6 @@ exports.getAllUserforms = async (req, res) => {
     res.status(200).json(users);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: "Something went wrong!" });
+    res.status(500).json({ message: error });
   }
 };
