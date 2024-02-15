@@ -12,7 +12,7 @@ const SubmittedForms = () => {
   const fetchSubmittedForms = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/submitted-forms"
+        "https://shortlyy.onrender.com/api/submitted-forms"
       );
       setSubmittedForms(response.data);
     } catch (error) {
